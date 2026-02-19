@@ -1,17 +1,13 @@
 package ro.adela.springboot3security.controller;
 
-import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.core.context.SecurityContextHolder;
-import org.springframework.security.core.userdetails.User;
 import ro.adela.springboot3security.entity.AuthRequest;
 import ro.adela.springboot3security.entity.UserInfo;
 import ro.adela.springboot3security.service.JwtService;
 import ro.adela.springboot3security.service.UserInfoDetails;
 import ro.adela.springboot3security.service.UserInfoService;
 
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
 import org.springframework.security.core.Authentication;
